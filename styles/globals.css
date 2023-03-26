@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-light;
+  }
+}
+/*******  invoices - team 4  */
+@keyframes withdrawalfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes toastfadeIn {
+  from {
+    opacity: 0;
+    bottom: 0;
+  }
+  to {
+    opacity: 1;
+    bottom: 1%;
+  }
+}
+@keyframes toastfadeOut {
+  from {
+    opacity: 1;
+    bottom: 1%;
+  }
+  to {
+    opacity: 0;
+    bottom: 0;
+  }
+}
+.toastMsg {
+  animation: toastfadeIn 0.5s, toastfadeOut 0.3s 2.8s;
+}
+.sideDrawal {
+  animation: withdrawalfadeIn 0.5s;
+}
